@@ -2,7 +2,7 @@
  
  
 ### **website link**
-[https://carreirasblackfree.000webhostapp.com/index.html]
+https://carreirasblackfree.000webhostapp.com/index.html
 
 ### **site link to admin**
-[https://carreirasblackfree.000webhostapp.com/loginAdm.php]
+https://carreirasblackfree.000webhostapp.com/loginAdm.php
