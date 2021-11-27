@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleFormulario.css">
+    <title>RELATORIO</title>
+    <link rel="icon" type="image/x-icon" href="assets/icone.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;800&family=Josefin+Sans&family=Raleway&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Spartan:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="menu">
+        <p>BLACK FREE <span style="color: #f00;">CARREIRAS</span></p>
+        <nav>
+            <ul>
+                <li> <a href="loginAdm.php">HOME</a> </li>
+            </ul>
+        </nav>                    
+    </div>
+
+    <div class="container">
+        
+        <div class="corpo">
+            <div class="form">
+                <h1>RELATORIO DO <span style="color: #f00;">CANDIDATO</span></h1>
+                <form action="index.php" method="post">
+
+                    <h4>DADOS DA EMPRESA</h4>
+                            
+                    <hr>
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="idCandidato">ID do Empresa:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="number" name="txtIdEmpresa" id="idEmpresa" value="{idEmpresa}" autocomplete="off" readonly>
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="nome">Nome:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtNome" id="nome" value="{nome}" autocomplete="off">
+                        </div>
+                    </div>    
+                     
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="estadoCivil">Razão Social:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtRazaoSocial" id="razaoSocial" value="{razaoSocial}" autocomplete="off">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="nascimento">CNPJ:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtCpnj" id="cnpj" value="{cnpj}" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <h4>E N D E R E Ç O</h4>
+
+                    <hr>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="cep">CEP:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtCep" id="cep" value="{cep}" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="endereco">Endereço:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtEndereco" id="endereco" value="{endereco}" autocomplete="off" >
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="endereco">Número:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtNumero" id="Numero" value="{numero}" autocomplete="off" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="endereco">Complemento:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtComplemento" id="Complemento" value="{complemento}" autocomplete="off" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="nome">Bairro:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtBairro" id="bairro" value="{bairro}" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="estado">Estado:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtEstado" id="estado" value="{estado}" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="estado">Município:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtMunicipio" id="municipio" value="{municipio}" autocomplete="off">
+                        </div>
+                    </div>
+
+ 
+
+
+                    <h4>C O N T A T O</h4>
+
+                    <hr>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="telefone">Telefone:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtTelefone" id="telefone" value="{telefone}" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="telefone">Celular:</label>
+                        </div>
+                        <div class="input">
+                            <input class="form-control" type="text" name="txtCelular" id="celular" value="{celular}" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <h4>COMPLEMENTO (Opcional)</h4>
+
+                    <hr>
+
+                        <div class="form-group1">
+                            <div class="label1">
+                                <label for="resumoProfissional">Informações complementares:</label>
+                            </div>
+                            <div class="input-text">
+                                <input class="form-control" type="text" name="txtInformacoesComplementares" id="informacoesComplementares" value="{informacoesComplementares}"  autocomplete="off">
+                            </div>
+                        </div>
+
+                    <div class="botao">
+                        <button type="button" onclick="window.location='formAdm.html' ">VOLTAR</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            Copyright © Lucas/Vinícius/Raphael/Anthony
+        </div>
+    </footer>
+</body>
+</html>

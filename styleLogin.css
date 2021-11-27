@@ -1,0 +1,467 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+::selection {
+  background: #2D2F36;
+}
+
+::-webkit-selection {
+  background: #2D2F36;
+}
+
+::-moz-selection {
+  background: #2D2F36;
+}
+
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.page {
+  background-image: url("img/imagem-capa.jpg");
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+
+.container {
+  background: #303030;
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+
+.left {
+  background: white;
+  height: 320px;
+  position: relative;
+  width: 50%;
+}
+
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 20px 40px 40px;
+}
+
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+
+.form .right {
+  background: #303030;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+
+svg {
+  position: absolute;
+  width: 320px;
+}
+
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+
+.form {
+  background: #303030;
+  margin: 40px;
+  position: absolute;
+}
+
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+#submit {
+  color: #707075;
+  margin-top: 40px;
+  transition: color 300ms;
+  border: 0ch;
+}
+#submit:focus {
+  color: #ffffffbd;
+}
+#submit:active {
+  color: #812727;
+}
+
+.botao button{
+  background-color: #812727;
+  padding: 10px;
+  color: #F1F1F2;
+  margin-top: 25px;
+  border: none;
+}
+
+.page h1{
+  color: #ffffff;
+  margin: 0;
+  background-color: #30303021;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media screen and ( max-width: 992px ){
+  .page {
+    background-image: url("img/imagem-capa.jpg");
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+    width: calc(100% - 40px);
+  }
+  
+  .container {
+    background: #303030;
+    display: flex;
+    height: 420px;
+    margin: 0 auto;
+    width: 740px;
+  }
+
+  .left {
+    background: white;
+    height: 420px;
+    position: relative;
+    width: 50%;
+  }
+
+  .login {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 60px 40px 40px;
+  }
+  
+  .eula {
+    color: #999;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 40px;
+  }
+
+  .form .right {
+    background: #303030;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+  }
+
+  .form {
+    background: #303030;
+    margin: 60px;
+    position: absolute;
+  }
+  
+  
+}
+
+@media screen and ( max-width: 780px ){
+  .page {
+    background-image: url("img/imagem-capa.jpg");
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+    width: calc(100% - 40px);
+  }
+  
+  .container {
+    background: #303030;
+    display: flex;
+    height: 420px;
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .left {
+    background: white;
+    height: 420px;
+    position: relative;
+    width: 50%;
+  }
+
+  .login {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 40px 40px;
+  }
+  
+  .eula {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 40px;
+  }
+
+  .form .right {
+    background: #303030;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+  }
+
+  .form {
+    background: #303030;
+    margin: 90px 0px 0px 30px;
+    position: absolute;
+  }
+  
+  
+}
+
+@media screen and ( max-width: 640px ){
+  .page {
+    background-image: url("img/imagem-capa.jpg");
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+    width: calc(100% - 40px);
+  }
+  
+  .container {
+    background: #303030;
+    display: flex;
+    height: 420px;
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  .left {
+    background: white;
+    height: 420px;
+    position: relative;
+    width: 50%;
+  }
+
+  .login {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 30px 40px;
+  }
+  
+  .eula {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 40px;
+  }
+
+.right {
+    background: #303030;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+  }
+
+  .form {
+    background: #303030;
+    margin: 90px 0px 0px 10px;
+    position: absolute;
+    float: left;
+  }
+  
+  
+}
+
+@media screen and ( max-width: 640px ){
+  .page {
+    background-image: url("img/imagem-capa.jpg");
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+    width: calc(100% - 40px);
+  }
+  
+  .container {
+    background: #303030;
+    display: flex;
+    height: 710px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+  .left {
+    background: white;
+    height: 420px;
+    position: relative;
+    width: 100%;
+  }
+
+  .login {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 30px 40px;
+  }
+  
+  .eula {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 40px;
+  }
+
+.right {
+    background: #303030;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+  }
+
+  .form {
+    background: #303030;
+    margin: 459px 0px 0px -352px;
+    position: absolute;
+    float: left;
+  }
+  
+  
+}
+
+@media screen and ( max-width: 489px ){
+  .page {
+    background-image: url("img/imagem-capa.jpg");
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+    width: calc(100% - 40px);
+  }
+  
+  .container {
+    background: #303030;
+    display: flex;
+    height: 710px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+  .left {
+    background: white;
+    height: 420px;
+    position: relative;
+    width: 100%;
+  }
+
+  .login {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 30px 40px;
+  }
+  
+  .eula {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 40px;
+  }
+
+.right {
+    background: #303030;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+  }
+
+  .form {
+    background: #303030;
+    margin: 459px 0px 0px -295px;
+    position: absolute;
+    float: left;
+  }
+  
+  
+}
+
+@media screen and ( max-width: 412px ){
+
+
+  .form {
+    background: #303030;
+    margin: 459px 0px 0px -261px;
+    position: absolute;
+    float: left;
+  }
+  
+  
+}
+
+@media screen and ( max-width: 369px ){
+
+
+  .form {
+    background: #303030;
+    margin: 459px 0px 0px -221px;
+    position: absolute;
+    float: left;
+    max-width: 60%;
+  }
+  
+  .login {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 30px 30px 40px;
+  }
+  
+}
+
+@media screen and ( max-width: 324px ){
+
+
+  .form {
+    background: #303030;
+    margin: 459px 0px 0px -187px;
+    position: absolute;
+    float: left;
+    max-width: 60%;
+  }
+
+  .login {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 30px 30px 40px;
+  }
+  
+  
+}

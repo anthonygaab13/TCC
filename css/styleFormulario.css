@@ -1,0 +1,749 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.menu{
+    background-color: #000000;
+    height: 60px;
+    max-width: 1680px;
+}
+
+.menu p{
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0px 0px 20px;
+    float: left;
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+}
+
+.menu ul{
+    padding-inline-start: 0%;
+    text-align: right;
+    padding-top: 14px;
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+}
+
+.menu nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 40px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+  max-width: 1000px;
+  background-color: #ffffff;
+	box-shadow:         0px 0px 15px rgba(50, 50, 50, 0.199);
+}
+
+.form h1{
+    font-size: 45px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+}
+
+hr{
+  margin: 10px 0px 20px;
+  max-width: 100%;
+
+}
+
+.label{
+  text-align: left;
+  float: left;
+  margin-left: 10px;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-weight: bold;
+}
+
+.input{
+  text-align: right;
+  margin-right: 10px;
+  color: #000000;
+}
+
+.form-group input{
+    width: 83%;
+    margin: 3px;
+    padding: .375rem .75rem;
+    font-family: 'Zen Kaku Gothic Antique';
+    background-color: rgba(182, 182, 182, 0.185);
+    border: 1px solid rgba(182, 182, 182, 0.555);
+    ;
+}
+
+#resumoProfissional{
+  width: 75%;
+  padding: .375rem .75rem;
+  font-family: 'Zen Kaku Gothic Antique';
+  background-color: rgba(182, 182, 182, 0.342);
+  border: 1px solid rgba(182, 182, 182, 0.555);
+}
+
+.form h4{
+  font-size: 22px;
+  margin: 70px 0px 10px 10px;
+  font-family: 'spartan';
+  font-weight: bolder;
+}
+
+.form-group1 input{
+  width: 75%;
+  margin: 3px;
+  padding: .375rem .75rem;
+  font-family: 'Zen Kaku Gothic Antique';
+  background-color: rgba(182, 182, 182, 0.342);
+  border: 1px solid rgba(182, 182, 182, 0.555);
+  ;
+}
+
+.input1{
+  text-align: right;
+  margin-right: 10px;
+}
+
+.label1{
+  text-align: left;
+  float: left;
+  margin-left: 10px;
+}
+
+.input-text{
+  text-align: right;
+  margin-right: 12px;
+  margin-top: 4px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+  --text-color: rgb(255, 255, 255);
+  --btn-color: hsl(0, 49%, 39%);
+  --bg-color: #141218;
+}
+
+button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 7px;
+  font-family: "Zen Kaku Gothic Antique";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;  
+  color: var(--text-color);
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+input::placeholder{
+  color: #000000;
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder { /* Firefox 18- */
+  color: transparent;  
+}
+input:focus::-moz-placeholder {  /* Firefox 19+ */
+  color: transparent;  
+}
+input:focus:-ms-input-placeholder {  
+  color: transparent;  
+}
+
+.label1{
+  font-family: 'Zen Kaku Gothic Antique';  
+  font-weight: bolder;
+}
+
+.form-file{
+  text-align: center;
+  margin: 30px;        
+}
+
+.form-file h2{
+  margin-bottom: 10px;
+  font-family: 'Spartan';
+  font-weight: bolder;
+}
+
+.form-button{
+  text-align: center;
+  margin: 10px;
+}
+
+#file1{
+  text-align: center;
+}
+
+.botao2{
+  text-align: center;
+
+}
+
+.botao2 button{
+  max-width: 50%;
+}
+
+.botao3{
+  text-align: center;
+}
+
+.botao3 button{
+  padding: 10px 57px 10px 57px;
+}
+
+#nomeInput{
+  width: 28%;
+  margin: 3px;
+  padding: .375rem .75rem;
+  font-family: 'Zen Kaku Gothic Antique';
+  background-color: rgba(66, 66, 66, 0.342);
+  border: 1px solid rgba(182, 182, 182, 0.555);
+  margin-bottom: 20px;
+}
+
+
+.rodape{
+    background-color: #000000;
+    height: 50px;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 13px;
+    font-family: 'Raleway';
+    font-weight: bolder;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+
+.form h1{
+    font-size: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+}
+
+.label{
+  text-align: left;
+  float: left;
+  margin-left: 10px;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-weight: bold;
+}
+
+.input{
+  text-align: right;
+  margin-right: 0px;
+  color: #000000;
+}
+
+.form-group input{
+    width: 83%;
+    margin: 3px;
+    padding: .375rem .75rem;
+    font-family: 'Zen Kaku Gothic Antique';
+    background-color: rgba(182, 182, 182, 0.185);
+    border: 1px solid rgba(182, 182, 182, 0.555);
+    ;
+}
+
+#resumoProfissional{
+  width: 75%;
+  padding: .375rem .75rem;
+  font-family: 'Zen Kaku Gothic Antique';
+  background-color: rgba(182, 182, 182, 0.342);
+  border: 1px solid rgba(182, 182, 182, 0.555);
+}
+
+.form h4{
+  font-size: 22px;
+  margin: 70px 0px 10px 10px;
+  font-family: 'Spartan';
+  font-weight: bolder;
+}
+
+.form-group1 input{
+  width: 65%;
+  margin: 3px;
+  padding: .375rem .75rem;
+  font-family: 'Zen Kaku Gothic Antique';
+  background-color: rgba(182, 182, 182, 0.342);
+  border: 1px solid rgba(182, 182, 182, 0.555);
+  ;
+}
+
+.input1{
+  text-align: right;
+  margin-right: 10px;
+}
+
+.label1{
+  text-align: left;
+  float: left;
+  margin-left: 10px;
+}
+
+.input-text{
+  text-align: right;
+  margin-right: 12px;
+  margin-top: 4px;
+  max-width: 85%;
+}
+
+.label1{
+  font-family: 'Zen Kaku Gothic Antique';  
+  font-weight: bolder;
+}
+
+.form-file{
+  text-align: center;
+  margin: 30px;        
+}
+
+.form-file h2{
+  margin-bottom: 10px;
+  font-family: 'Spartan';
+  font-weight: bolder;
+}
+
+.form-button{
+  text-align: center;
+  margin: 10px;
+}
+
+.botao2{
+  text-align: center;
+
+}
+
+.botao2 button{
+  max-width: 50%;
+}
+
+.botao3{
+  text-align: center;
+}
+
+.botao3 button{
+  padding: 10px 57px 10px 57px;
+}
+
+#nomeInput{
+  width: 30%;
+  margin: 3px;
+  padding: .375rem .75rem;
+  font-family: 'Zen Kaku Gothic Antique';
+  background-color: rgba(66, 66, 66, 0.342);
+  border: 1px solid rgba(182, 182, 182, 0.555);
+  margin-bottom: 20px;
+}
+
+}
+
+@media (max-width: 692px) {
+
+  .form h1{
+      font-size: 40px;
+      margin-bottom: 80px;
+      text-align: center;
+      font-family: 'Zen Kaku Gothic Antique';
+      font-weight: 700;
+  }
+  
+  .label{
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: bold;
+  }
+  
+  .input{
+    text-align: right;
+    margin-right: 0px;
+    color: #000000;
+  }
+  
+  .form-group input{
+      width: 73%;
+      margin: 3px;
+      padding: .375rem .75rem;
+      font-family: 'Zen Kaku Gothic Antique';
+      background-color: rgba(182, 182, 182, 0.185);
+      border: 1px solid rgba(182, 182, 182, 0.555);
+      ;
+  }
+  
+  #resumoProfissional{
+    width: 75%;
+    padding: .375rem .75rem;
+    font-family: 'Zen Kaku Gothic Antique';
+    background-color: rgba(182, 182, 182, 0.342);
+    border: 1px solid rgba(182, 182, 182, 0.555);
+  }
+  
+  .form h4{
+    font-size: 22px;
+    margin: 70px 0px 10px 10px;
+    font-family: 'Spartan';
+    font-weight: bolder;
+  }
+  
+  .form-group1 input{
+    width: 45%;
+    margin: 3px;
+    padding: .375rem .75rem;
+    font-family: 'Zen Kaku Gothic Antique';
+    background-color: rgba(182, 182, 182, 0.342);
+    border: 1px solid rgba(182, 182, 182, 0.555);
+    ;
+  }
+  
+  .input1{
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .label1{
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .input-text{
+    text-align: right;
+    margin-right: 12px;
+    margin-top: 4px;
+    max-width: 55%;
+  }
+  
+  .label1{
+    font-family: 'Zen Kaku Gothic Antique';  
+    font-weight: bolder;
+  }
+  
+  .form-file{
+    text-align: center;
+    margin: 30px;        
+  }
+  
+  .form-file h2{
+    margin-bottom: 10px;
+    font-family: 'Spartan';
+    font-weight: bolder;
+  }
+  
+  .form-button{
+    text-align: center;
+    margin: 10px;
+  }
+
+  .botao2{
+    text-align: center;
+  }
+  
+  .botao2 button{
+    max-width: 50%;
+    font-size: 14px;
+  }
+  
+  .botao3{
+    text-align: center;
+  }
+  
+  .botao3 button{
+    padding: 10px 57px 10px 57px;
+    max-width: 52%;
+    font-size: 14px;
+  }
+  
+  #nomeInput{
+    width: 40%;
+    margin: 3px;
+    padding: .375rem .75rem;
+    font-family: 'Zen Kaku Gothic Antique';
+    background-color: rgba(66, 66, 66, 0.342);
+    border: 1px solid rgba(182, 182, 182, 0.555);
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  }
+
+  @media (max-width: 418px) {
+
+    .menu{
+      background-color: #000000;
+      height: 60px;
+      max-width: 418px;
+  }
+  
+  .menu p{
+      text-align: left;
+      color: #fff;
+      font-size: 20px;
+      padding: 20px 0px 0px;
+      float: left;
+      font-family: 'Josefin Sans';
+      font-weight: bolder;
+  }
+  
+  .menu ul{
+      padding-inline-start: 0%;
+      text-align: right;
+      padding-top: 21px;
+      font-family: 'Josefin Sans';
+      font-weight: bolder;
+  }
+  
+  .menu nav ul li a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      padding: 0px 5px 0px 0px;
+  }
+
+    .form h1{
+        font-size: 30px;
+        margin-bottom: 80px;
+        text-align: center;
+        font-family: 'Zen Kaku Gothic Antique';
+        font-weight: 700;
+    }
+    
+    .label{
+      text-align: left;
+      float: left;
+      margin-left: 4px;
+      font-family: 'Zen Kaku Gothic Antique';
+      font-weight: bold;
+      font-size: 14px;
+    }
+    
+    .input{
+      text-align: right;
+      margin-right: 2px;
+      color: #000000;
+    }
+    
+    .form-group input{
+        width: 63%;
+        margin: 3px;
+        padding: .375rem .75rem;
+        font-family: 'Zen Kaku Gothic Antique';
+        background-color: rgba(182, 182, 182, 0.185);
+        border: 1px solid rgba(182, 182, 182, 0.555);
+        ;
+    }
+    
+    #resumoProfissional{
+      width: 75%;
+      padding: .375rem .75rem;
+      font-family: 'Zen Kaku Gothic Antique';
+      background-color: rgba(182, 182, 182, 0.342);
+      border: 1px solid rgba(182, 182, 182, 0.555);
+    }
+    
+    .form h4{
+      font-size: 22px;
+      margin: 70px 0px 10px 10px;
+      font-family: 'Spartan';
+      font-weight: bolder;
+    }
+    
+    .form-group1 input{
+      width: 45%;
+      margin: 3px;
+      padding: .375rem .75rem;
+      font-family: 'Zen Kaku Gothic Antique';
+      background-color: rgba(182, 182, 182, 0.342);
+      border: 1px solid rgba(182, 182, 182, 0.555);
+      ;
+    }
+    
+    .input1{
+      text-align: right;
+      margin-right: 0px;
+    }
+    
+    .label1{
+      text-align: left;
+      float: left;
+      margin-left: 0px;
+      font-size: 15px;
+    }
+    
+    .input-text{
+      text-align: right;
+      margin-right: 4px;
+      margin-top: 4px;
+      max-width: 57%;
+    }
+    
+    .label1{
+      font-family: 'Zen Kaku Gothic Antique';  
+      font-weight: bolder;
+      font-size: 13px;
+    }
+    
+    .form-file{
+      text-align: center;
+      margin: 30px;        
+    }
+    
+    .form-file h2{
+      margin-bottom: 10px;
+      font-family: 'Spartan';
+      font-weight: bolder;
+      font-size: 22px;
+    }
+    
+    .form-button{
+      text-align: center;
+      margin: 10px;
+    }
+
+    #file1{
+      font-size: 10px;
+    }
+
+    .botao2{
+      text-align: center;
+    }
+    
+    .botao2 button{
+      max-width: 60%;
+      font-size: 14px;
+    }
+    
+    .botao3{
+      text-align: center;
+    }
+    
+    .botao3 button{
+      padding: 10px 57px 10px 57px;
+      max-width: 60%;
+      font-size: 12px;
+    }
+    
+    #nomeInput{
+      width: 60%;
+      margin: 3px;
+      padding: .375rem .75rem;
+      font-family: 'Zen Kaku Gothic Antique';
+      background-color: rgba(66, 66, 66, 0.342);
+      border: 1px solid rgba(182, 182, 182, 0.555);
+      margin-bottom: 20px;
+    }
+    
+    
+    
+    }
+
